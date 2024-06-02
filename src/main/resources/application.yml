@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Product
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: Suhrob1332
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cache:
+    redis:
+      time-to-live: 30m
+#  sql:
+#    init:
+#      data-locations: classpath:products.sql
+server:
+  port: 8081
